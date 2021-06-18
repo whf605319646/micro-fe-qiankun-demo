@@ -8,10 +8,10 @@
   </div>
     <!--- 新添加 --->
   <div class="menu">      
-    <router-link to="/vue2-micro-app">Child Home</router-link>    
+    <router-link to="/micro-app-vue2">Child Home</router-link>    
   </div>    
   <div class="menu">      
-    <router-link to="/vue2-micro-app/about">Child About</router-link>    
+    <router-link to="/micro-app-vue2/about">Child About</router-link>    
   </div>
 </div>
 

@@ -1,4 +1,4 @@
-# vue3-main-app
+# micro-main-vue3
 
 ## Project setup
 ```

@@ -9,7 +9,7 @@ Vue.use(VueRouter)
 let microPath = "";
 
 if (window.__POWERED_BY_QIANKUN__) {  
-  microPath = '/vue2-micro-app'
+  microPath = '/micro-app-vue2'
 }
 
 const routes = [
