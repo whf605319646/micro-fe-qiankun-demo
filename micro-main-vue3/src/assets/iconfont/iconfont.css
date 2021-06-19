@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "micro-main-iconfont"; /* Project id 2620533 */
+  src: url('iconfont.woff2?t=1624114933468') format('woff2'),
+      url('iconfont.woff?t=1624114933468') format('woff'),
+      url('iconfont.ttf?t=1624114933468') format('truetype');
+}
+
+.micro-main-iconfont {
+  font-family: "micro-main-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.micro-main-icon-user:before {
+  content: "\e89f";
+}
+
+.micro-main-icon-flag:before {
+  content: "\e604";
+}
+
