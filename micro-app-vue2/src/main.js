@@ -18,12 +18,13 @@ if (window.__POWERED_BY_QIANKUN__) {
 /** * 新增： * 渲染函数 * 两种情况：主应用生命周期钩子中运行 / 微应用单独启动时运行 */
 function render(props) {
 
-    props.onGlobalStateChange((state, prevState) => {    
-        // state: 变更后的状态; prev 变更前的状态    
-        console.log("通信状态发生改变：", state, prevState);    
-        // 这里监听到globalToken变化再更新store
-        store.commit('setToken', '123456')
-    }, true);
+    if(window.__POWERED_BY_QIANKUN__) { 
+        props.onGlobalStateChange((state, prevState) => {
+            // state: 变更后的状态; prev 变更前的状态
+            console.log("通信状态发生改变：", state, prevState);
+            store.commit('setToken', '123456')
+        }, true);
+    }
 
     // 挂载应用
     instance = new Vue({
